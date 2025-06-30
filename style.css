@@ -1,0 +1,188 @@
+/* Estilos gerais do corpo da página */
+body,
+p, li {
+  font-family: "Fira Sans", sans-serif;
+  color: linen;
+  background-color: #252932;
+  line-height: 1.7;
+  text-align: left;
+  font-size: 15pt;
+  margin-bottom: 1vh;
+  padding-bottom: 1vh;
+  z-index: 1;
+    
+}
+
+header,
+footer {
+  max-width: 800px;
+  margin: 4rem auto;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+section {
+  max-width: 800px;
+  margin: 4rem auto;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+
+h1 {
+  font-family: "Fira Sans", sans-serif;
+  text-align: left;
+  color: linen; /* replace with any color you want */
+  font-weight: 500;
+  font-size: 3em;
+  line-height: 1;
+}
+
+h2 {
+  color: linen; /* replace with any color you want */
+  font-family: "Fira Sans", sans-serif;
+  line-height: 1.7;
+  text-align: left;
+  margin-bottom: 0.2rem; 
+}
+
+hr {
+  color: linen; /* replace with any color you want */
+  border: none;
+  border-top: 1px solid #ccc;
+  margin-top: .1rem;
+  margin-bottom: .1rem; 
+}
+
+strong {
+  background-color: #391113; 
+  color: #fc6e73;
+}
+
+.anno-group .annotation-note-title {
+  font-size: 1rem;
+  font-weight: 600;
+  fill: #db445c;  /* white text */
+}
+
+.anno-group .annotation-note-label {
+  font-size: 0.9rem;
+  line-height: 1.3;
+  fill: white;  /* light gray text */
+}
+
+.anno-group .annotation-connector {
+  stroke-width: 1.5px;
+  stroke: linen;  /* optional: change line color too */
+}
+
+.footer-anno text { 
+  fill:white;
+  font-size: 0.9rem;
+  line-height: 1.3;
+}
+
+
+/* Estilo para a seção principal com 2 colunas */
+#scrolly {
+  position: relative;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 5vh 2rem;
+}
+
+/* Container para o texto que rola */
+article {
+  position: relative;
+  grid-column: 1;
+  top: 60vh;
+}
+
+.heatmap-cell {
+  transition: background-color .9s ease, transform .9s ease;
+}
+.heatmap-cell.is-off {
+  background-color:#252932;
+  transform: scale(.7);   /* encolhe a célula: visível na hora */
+}
+
+
+/* Sidebar que contém o heatmap */
+#sidebar {
+  grid-column: 2;
+  position: sticky;
+  top: 10vh;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container do heatmap */
+#heatmap {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 5px;
+  width: 320px;
+  height: 320px;
+}
+
+/* Células individuais do heatmap */
+.heatmap-cell {
+  width: 100%;
+  background-color: #db445c;
+  border-radius: 2px;
+  transition: background-color 0.5s ease-in-out;
+}
+
+/* Estilo da célula "apagada" */
+.heatmap-cell.is-off {
+  background-color: #323742;
+}
+
+/* Estilo de cada "passo" da narrativa */
+.step {
+  margin-bottom: 100vh;
+  background-color: #252932;
+  padding: 1.5rem;
+  opacity: 0.5;
+}
+
+/* Estilo do passo ativo */
+.step.is-active {
+  background-color: #252932;
+  border-color: #252932;
+  opacity: 1;
+}
+
+.step p {
+  background-color: transparent;
+  font-family: "Fira Sans";
+  min-width: 40svw;
+  padding-left: 80px;
+}
+
+
+/* Media query para telas menores (mobile) */
+@media (max-width: 768px) {
+  #scrolly {
+    grid-template-columns: 1fr;
+  }
+  #sidebar {
+    grid-row: 1;
+    position: relative;
+    top: 0;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+  article {
+    grid-row: 2;
+  }
+  .step {
+    margin-bottom: 50vh;
+  }
+}

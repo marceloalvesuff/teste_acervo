@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scrollytelling: Acervo do 08 de Janeiro</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Importando a fonte Roboto do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Importando as bibliotecas necessárias -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://unpkg.com/scrollama"></script>
+    <!-- d3-annotation as an ES module -->
+    <script type="module" src="https://unpkg.com/d3-svg-annotation@2.5.1?module"></script>
+
+   
+  </head>
+  <body>
+    <header>
+      <h1>Acervo do 08 de Janeiro nas Plataformas Digitais</h1>
+      <h2>Sobre o que é esse projeto?</h2>
+      <hr />
+      <p>
+        O projeto propõe a criação do <strong>Centro de Estudos sobre a Memória do 08 de Janeiro, sediado na PUC-Rio</strong> e articulado à rede de pesquisadores do INCT/DSI, com o objetivo de preservar, analisar e interpretar os discursos e ações digitais que estimularam a <strong>insurreição golpista de 2023</strong>. Por meio da constituição de um acervo digital, a iniciativa busca combater o apagamento sistemático das evidências online dos atos antidemocráticos, reunindo pesquisadores de diferentes áreas para reconstruir as narrativas políticas e midiáticas que contestaram o sistema eleitoral brasileiro e culminaram na invasão dos Três Poderes.
+      </p>
+       <h2>Por que ele é relevante?</h2>
+      <hr />
+      <p>
+        Levantamento realizado pela organização não-governamental <strong>SumOfUs</strong> identificou dezenas de livestreams sendo transmitidas ao vivo no Youtube direto da Esplanada durante o 08 de janeiro, algumas atingindo audiências de cerca de 1 milhão visualizações. No entanto, na semana seguinte, a maior parte dos vídeos já estava indisponível em função da remoção pelas plataformas digitais ou por decisões do TSE. Além disso, os próprios autores dos conteúdos começaram a deletar as gravações e imagens da insurgência em função das notícias das prisões de centenas de pessoas.
+      </p>
+
+
+    </header>
+
+    <section id="scrolly">
+      <article>
+        <div class="step" data-step="1">
+          <p>
+            Para ilustrar o processo de apagamento, levamos em consideração um recorte do Youtube. Dos 53 mil vídeos publicados entre outubro de 2022 e janeiro de 2023, somente 34 mil continuavam online em 2025. Ou seja, <strong>19 mil vídeos foram apagados em dois anos.</strong>
+          </p>      
+        </div>
+        <div class="step" data-step="2">
+          <p>
+            Quando se observa a distribuição diária de vídeos, há um processo de apagamento durante a eleição e no período próximo ao ataque à Esplanada dos Ministérios. Em 08 de janeiro de 2023, 
+dos 546 vídeos inicialmente extraídos, <span style="background-color: #12313e; color: #82aad6; padding: 2px 4px; border-radius: 3px;">somente 284 estavam online em março de 2025.</span>
+          </p>
+        </div>
+        <div class="step" data-step="3">
+          <p>
+          Encontramos <strong>546 vídeos</strong> no Youtube publicados em 08 de Janeiro de 2023.
+          </p>
+        </div>
+        <div class="step" data-step="4">
+          <p>
+          A maior parte já não está mais online. Na verificação realizada em 2025, somente <strong>262 vídeos</strong> estavam disponíveis na plataforma.
+          </p>
+        </div>
+        <div class="step" data-step="5">
+          <p>
+          Analisando os motivos das remoções, descobrimos que 143 vídeos foram <strong>excluídos pelos próprios canais.</strong>
+          </p>
+        </div>
+        <div class="step" data-step="6">
+          <p>
+         Esse apagamento não é algo comum no Youtube. Os canais de direita adotam essa técnica <strong>estrategicamente</strong> para revisar seu próprio discurso.
+          </p>
+        </div>
+        <div class="step" data-step="7">
+          <p>
+            Este projeto se propõe a <strong>reconstruir narrativas políticas e midiáticas</strong> que contestaram o sistema eleitoral e fomentaram a insurgência, detalhando os eventos que culminaram nos atos de 08 de janeiro.
+          </p>
+        </div>
+      </article>
+
+      <aside id="sidebar">
+        <div id="heatmap"></div>
+      </aside>
+      
+    </section>
+    <section>
+  <p>
+    Para resolver esse problema, criamos o <strong>Acervo Digital do 08 de Janeiro</strong> a partir de um grande volume de dados que foram previamente coletados de três fontes:
+  </p>
+
+  <ul>
+    <li>Plataformas digitais do Brasil – Facebook, Instagram, X (Twitter), Youtube, TikTok e Kwai;</li>
+    <li>Alt-tech que abrigam discursos extremistas e conspiratórios – Gettr, BitChute, Rumble, Odysee e CosTV;</li>
+    <li>Websites do ecossistema midiático de extrema-direita.</li>
+  </ul>
+
+      <p>
+        Ao todo, o acervo original e inédito será composto por mais de <strong>1 milhão de publicações</strong> que tiveram seus metadados preservados.
+      </p>
+
+    </section>
+
+    <footer>
+      <p>
+        
+        
+      </p>
+    </footer>
+
+    <script type="module">
+      import { annotation, annotationLabel } from "https://unpkg.com/d3-svg-annotation@2.5.1?module";
+      // --- 1. SETUP ---
+      const article = d3.select("article");
+      const steps = article.selectAll(".step");
+      const heatmapContainer = d3.select("#heatmap");
+
+      /*  ⤵  NEW: SVG overlay for the annotation (same size as the heatmap) */
+      const svg = d3
+        .select("#sidebar")               // or any container you prefer
+        .append("svg")
+        .attr("width", 320)
+        .attr("height", 320)
+        .style("overflow", "visible")
+        .style("opacity", 0);             // start hidden
+
+      /* annotation definition ----------------------------------------- */
+      const annotations = [
+        {
+          note: {
+            title: "APAGAMENTO PROGRESSIVO",
+            label:
+              "Com o passar do tempo, os vídeos vão sendo deletados das plataformas digitais",
+            align: "left",
+            wrap: 280
+          },
+          
+          x: -300, // centro aproximado do heatmap
+          y: 0,
+          dy: -23,
+          dx: -20,
+          type: annotationLabel,
+          
+
+          connector: {
+            // type: "curve",
+          end: "arrow" },  // ⬅️ remove connector line
+          disable: ["connector", "subject"]  // ⬅️ completely disable both
+        }
+      ];
+
+      const makeAnnotations = annotation().annotations(annotations);
+      svg.append("g").attr("class", "anno-group").call(makeAnnotations);
+
+      // Configurações do Heatmap
+      let heatmapCells = [];
+      const TOTAL_CELLS = 100;
+
+      const scroller = scrollama();
+
+      /* grupo da annotation do rodapé --------------------------------- */
+      const footerAnnoGroup = svg
+        .append("g")
+        .attr("class", "footer-anno");
+
+      const footerAnno = annotation()
+        .annotations([
+          {
+            note: {
+              label: "100 vídeos online",   // texto inicial
+              align: "middle",
+              wrap: 200
+            },
+            x: -240,   // meio do heatmap (320/2)
+            y: 340,   // perto da borda inferior
+            dx: -25,
+            dy: 0,
+            type: annotationLabel,
+            disable: ["connector", "subject"]      // só o texto
+          }
+        ]);
+
+      footerAnnoGroup.call(footerAnno);
+
+
+      // --- 2. FUNÇÕES DE VISUALIZAÇÃO ---
+
+      // Função para gerar o grid do heatmap
+      function generateHeatmap() {
+        for (let i = 0; i < TOTAL_CELLS; i++) {
+          heatmapContainer.append("div").attr("class", "heatmap-cell");
+        }
+        // Seleciona todas as células e as embaralha para um efeito de fade aleatório
+        heatmapCells = d3.shuffle(
+          heatmapContainer.selectAll(".heatmap-cell").nodes()
+        );
+      }
+
+      // Função para atualizar o heatmap com base no passo atual
+      function updateHeatmap(stepIndex) {
+        const numSteps = steps.size();
+        // Garante que a divisão não seja por zero se houver apenas um passo
+        const progress = numSteps > 1 ? stepIndex / (numSteps - 1) : 1;
+        const cellsToTurnOff = Math.ceil(TOTAL_CELLS * progress);
+
+        // Calcula quantos restam
+        const remaining = TOTAL_CELLS - cellsToTurnOff;
+
+        // Atualiza a nota de rodapé
+        d3.select(".footer-anno")
+          .select("text.annotation-note-label")
+          .html(
+    `Nota: <tspan font-weight="bold">${remaining}</tspan>
+     vídeo${remaining !== 1 ? "s" : ""} online`
+  );
+
+
+        heatmapCells.forEach((cell, i) => {
+          d3.select(cell).classed("is-off", i < cellsToTurnOff);
+        });
+      }
+
+      // --- 3. LÓGICA DO SCROLLAMA ---
+      function handleStepEnter(response) {
+        // Ativa o passo atual
+        steps.classed("is-active", (d, i) => i === response.index);
+
+        // Atualiza o heatmap
+        updateHeatmap(response.index);
+
+        /* ⤵  Anima a annotation */
+        if (response.index === 1) {
+          svg.transition().duration(600).style("opacity", 1);   // fade-in
+        } 
+      }
+
+      // --- 4. INICIALIZAÇÃO ---
+      function init() {
+        // Gera o heatmap
+        generateHeatmap();
+
+        // Configura o Scrollama
+        scroller
+          .setup({
+            step: "article .step",
+            offset: .5,
+            debug: false,
+          })
+          .onStepEnter(handleStepEnter);
+
+        // Dispara o primeiro evento para carregar o estado inicial
+        // Removido para que o primeiro step só ative com scroll
+        // handleStepEnter({ index: 0, element: steps.node(), direction: "down" });
+
+
+        // Listener para redimensionamento da janela
+        window.addEventListener("resize", () => {
+          scroller.resize();
+        });
+      }
+
+      // Iniciar a aplicação
+      init();
+    </script>
+  </body>
+</html>
